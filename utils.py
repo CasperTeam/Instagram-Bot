@@ -156,7 +156,7 @@ async def upload(m, bot, chat_id, dir):
             except FloodWait as e:
                 await asyncio.sleep(e.x)
                 await bot.send_media_group(chat_id=chat_id, media=media, disable_notification=True)
-        await m.edit(f"Total: {total}\nUploaded: {up} Remaining to upload: {rm}")
+            await m.edit(f"Total: {total}\nUploaded: {up} Remaining to upload: {rm}")
 
     if totalvideo >= 2:
         for i in range(0, len(VDO), 10):
@@ -172,7 +172,7 @@ async def upload(m, bot, chat_id, dir):
             except FloodWait as e:
                 await asyncio.sleep(e.x)
                 await bot.send_media_group(chat_id=chat_id, media=media, disable_notification=True)
-        await m.edit(f"Total: {total}\nUploaded: {up} Remaining to upload: {rm}")
+            await m.edit(f"Total: {total}\nUploaded: {up} Remaining to upload: {rm}")
     if totalgif >= 2:
         for gif in GIF:
             try:
@@ -193,7 +193,7 @@ async def upload(m, bot, chat_id, dir):
             [
                 [
 					InlineKeyboardButton("👨🏼‍💻Developer", url='https://t.me/subinps'),
-					InlineKeyboardButton("🤖Othor Bots", url="https://t.me/subin_works/122")
+					InlineKeyboardButton("🤖Other Bots", url="https://t.me/subin_works/122")
 				],
 				[
 					InlineKeyboardButton("🔗Source Code", url="https://github.com/subinps/Instagram-Bot"),
